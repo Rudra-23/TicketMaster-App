@@ -1,0 +1,56 @@
+.message {
+    display: flex;
+    width: 80%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.p_tag {
+    color: red;
+    font-size: large;
+}
+
+.events_table {
+    width: 80%;
+    background-color: rgb(247, 247, 247);
+    color: black;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+th {
+    background-color: rgb(241, 241, 241);
+    font-weight: bold;
+    border: 1px solid black;
+    cursor: pointer;
+    height: 40px;
+    box-shadow: 0.20em 0.20em 0.20em rgba(0, 0, 0, 0.3);
+}
+
+td {
+    text-align: center;
+    height: 70px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.event_name {
+    margin: 0 30px 0 30px;
+}
+
+img {
+    vertical-align: middle;
+    width: 85px;
+    height: 50px;
+}
+
+.event_name:hover {
+    color: rgb(74, 54, 162);
+    text-decoration: none;
+    cursor: pointer;
+}

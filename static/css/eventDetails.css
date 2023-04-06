@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.details_card {
+    font-family: sans-serif;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    width: 1000px;
+    /* height: 500px; */
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+    backdrop-filter: blur(10px);
+    color: rgb(244, 244, 244);
+}
+
+.details_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 27px;
+    font-weight: 300;
+    width: 100%;
+    height: 130px;
+}
+
+.details_body {
+    display: flex;
+    flex-direction: row;
+}
+
+.details_info {
+    width: 500px;
+    /* height: 370px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.details_info_values {
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 60px;
+}
+
+.info_bold {
+    font-size: larger;
+    color: rgb(101, 226, 195);
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.info_text {
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(223, 221, 221);
+}
+
+span.info_text {
+    color: rgb(251, 248, 248);
+    font-size: smaller;
+    border-radius: 4px;
+    margin-top: 7px;
+    padding: 4px 8px 4px 8px;
+}
+.info_text a {
+    color: rgb(62, 175, 232);
+    text-decoration: none;
+}
+
+.info_text a:hover {
+    color: rgb(195, 42, 195);
+}
+
+.info_text_green {
+    background-color: green;
+}
+
+.info_text_red {
+    background-color: red;
+}
+
+.info_text_orange {
+    background-color: orange;
+}
+
+.info_text_black {
+    background-color: black;
+}
+
+.details_image, .seatmap {
+    width: 500px;
+    height: 370px;
+    margin-right: 60px;
+    margin-bottom: 30px;
+}
+
+.seatmap img {
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+/* button */
+
+.get_more_details, .more_details_button {
+    width: 330px;
+    height: 100px;
+    background: transparent;
+    font-size: 20px;
+    color:rgb(203, 203, 203);
+    cursor: pointer;
+}
+
+.arrow-down {
+    margin: 1px;
+    border: 1px solid rgb(150, 146, 146);
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 12px;
+    transform: rotate(45deg);
+}
+
+.more_details_button p i:hover {
+    border-color: white;
+    border-width: 0 2px 2px 0;
+}

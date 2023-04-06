@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+    </style>
+    
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/eventsTable.css">
+    <link rel="stylesheet" href="/static/css/eventDetails.css">
+    <link rel="stylesheet" href="/static/css/venueDetails.css">
+    
+    <script defer src="/static/js/index.js"></script>
+    <script defer src="/static/js/events.js"></script>
+    <script defer src="/static/js/details.js"></script>
+</head>
+<body>
+    <div class="main_body">
+        <div class="container">
+            <div class="header">
+                <div class="title">
+                    Events Search
+                </div>
+                <form method="GET">
+                    <div class="main">
+                        <div class="row first">
+                            <label for="keyword"  class="required" >Keyword</label> <br>
+                            <input type="text" id="keyword" name="keyword" autocomplete="on" required>
+                        </div>
+                        <div class="row second">
+                            <div class="second_first">
+                                <label for="distance_miles">Distance (miles)</label> <br>
+                                <input type="number" id="distance_miles" name="distance_miles" placeholder = "10" value="" autocomplete="on">
+                            </div>
+                            <div class="second_second">
+                                <label for="category"  class="required" >Category</label> <br>
+                                <select id="category"  name="category">
+                                    <option value="Default" selected>Default</option>
+                                    <option value="Music">Music</option>
+                                    <option value="Sports">Sports</option>
+                                    <option value="Arts">Arts</option>
+                                    <option value="Theatre">Theatre</option>
+                                    <option value="Film">Film</option>
+                                    <option value="Miscellaneous">Miscellaneous</option>
+                                </select>
+                            </div>
+                            </div>
+                            <div class="row third">
+                                <label for="locationText"  class="required" >Location</label> &nbsp;
+                                <input type="checkbox" id="location" name="location" onclick="disable()" autocomplete="off"> Auto-Detect Location</br>
+                                <input type="text" id="locationText" name="locationText" required>
+                            </div>
+                            <div class="row fourth">
+                                <button id="submit" onclick="checkInputs(event)">SEARCH</button>
+                                <button id='clear' onclick="resetValues(event)">CLEAR</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+
+</html>

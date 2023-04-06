@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+
+html {
+    background-image: url("/static/images/background.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    height: 420px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(197, 197, 197)
+}
+
+.header {
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 650px;
+    /* height: 360px; */
+    height: auto;
+
+    border-radius: 20px;
+    background-color: rgba(128, 128, 128, 0.25); 
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+}
+
+.title { 
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    color: rgb(207, 203, 203);
+    border-bottom: 1px solid white;
+    font-family: 'Merriweather', serif;
+}
+
+form , .main {
+    font-size: 14px;
+    font-weight: 50;
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.row {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+}
+
+.second_first, .second_second {
+    width: 50%;
+}
+
+input, select {
+    color: white;
+    width: 100%;
+    height: 30px;
+    border-radius: 9px;
+    padding-left: 10px;
+    margin-top: 5px;
+    border-color: white;
+    background: transparent;
+}
+
+select option {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.required:after {
+    content: "*";
+    color: red;
+}
+
+#location {
+    width: 12px;
+    height: 12px;
+}
+
+label {
+    color: rgb(155, 200, 227);
+}
+
+#distance_miles {
+    width: 150px;
+    color: white;
+}
+
+button {
+    margin-top: 10px;
+    height: 40px;
+    width: 90px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: large;
+    margin-right: 5px;
+}
+
+#submit {
+    background-color: rgb(237, 117, 47);
+    box-shadow: 0.10em 0.10em rgba(237, 117, 47, 0.5);
+    font-size: 15px;
+    width: 100px;
+    cursor: pointer;
+}
+
+#clear {
+    background-color: rgb(86, 110, 167);
+    box-shadow: 0.10em 0.10em rgba(86, 110, 167, 0.5);
+    font-size: 15px;
+    cursor: pointer;
+}   
+
+#submit:hover {
+    background-color: rgb(223, 134, 82);;
+}
+
+ #clear:hover {
+    background-color: rgb(103, 124, 172);
+ }
